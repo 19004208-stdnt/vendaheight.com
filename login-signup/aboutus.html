@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.jumbotron {
+			background-image: url('https://picsum.photos/id/1000/1600/800');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			text-align: center;
+			padding: 200px 0;
+			margin-bottom: 0;
+		}
+		.jumbotron h1 {
+			font-size: 80px;
+		}
+		.card {
+			margin-top: 50px;
+			border-radius: 0;
+			border: none;
+		}
+		.card-header {
+			background-color: #f8f9fa;
+			border-radius: 0;
+			border: none;
+		}
+		.card-title {
+			font-size: 40px;
+			color: #007bff;
+			margin-bottom: 0;
+		}
+		.card-body {
+			padding: 50px;
+			font-size: 18px;
+			line-height: 1.5;
+			color: #6c757d;
+		}
+
+
+    .arrow-home {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.home-link {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  animation: jump 1s ease-in-out infinite;
+}
+
+.home-link:hover {
+  animation-play-state: paused;
+  color: #f39c12;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+    color: #f1c40f;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+	</style>
+</head>
+<body>
+
+
+  <a href="home.html" class="arrow-home">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+      <line x1="19" y1="12" x2="5" y2="12"></line>
+      <polyline points="12 19 5 12 12 5"></polyline>
+    </svg>
+  </a>
+
+
+	<div class="jumbotron">
+		<h1>About Us</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<h2 class="card-title">Our Mission</h2>
+					</div>
+					<div class="card-body">
+						<p>We are committed to providing the best possible living experience for our residents. Our goal is to create a welcoming and comfortable environment that feels like home.</p>
+						<p>We strive to provide exceptional customer service and respond to the needs of our residents in a timely and efficient manner.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<h2 class="card-title">Our History</h2>
+					</div>
+					<div class="card-body">
+						<p>Vendaheight has been providing quality housing since 2005. We started with a single apartment complex and have since expanded to several locations throughout the country.</p>
+						<p>Throughout our history, we have remained committed to our core values of integrity, quality, and customer service. We are proud of the relationships we have built with our residents and look forward to continuing to serve them for many years to come.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <footer style="background-color: #333; color: #fff; padding: 10px;">
+  <div class="container">
+    <p style="text-align: center; font-size: 14px;">&copy; 2023 Vendaheight. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
